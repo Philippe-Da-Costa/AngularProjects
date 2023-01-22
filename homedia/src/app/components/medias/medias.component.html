@@ -1,0 +1,29 @@
+
+
+
+<h2>Liste des Medias</h2>
+
+<table >
+    <tr>
+        <th>IDMEDIAS</th>
+        <th>TITRE</th>
+        <th>SOUS-TITRE</th>
+        <th>DESCRIPTION</th>
+        <th>DUREE</th>
+        <th>CATEGORIE</th>
+        <th>STYLE</th>
+        <th>REALISATEUR</th>
+        <th>FORMAT-VIDEO</th>
+    </tr>
+    <tr *ngFor="let m of medias">
+        <td>id :{{m.idMedia}}</td>
+        <td>{{m.titreMedia}}</td>
+        <td>{{m.sousTitreMedia}}</td>
+        <td>{{m.descriptionMedia}}</td>
+        <td>{{m.dureeVideos}}</td>
+        <td>{{m.categorieVideos}}</td>
+        <td>{{m.styleVideos}}</td>
+        <td>{{m.realisateurVideo}}</td>
+        <td>{{m.formatVideo}}</td>
+</tr>
+</table>

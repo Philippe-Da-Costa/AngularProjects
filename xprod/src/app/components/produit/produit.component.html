@@ -1,0 +1,38 @@
+
+
+<div class="container">
+    <div class="container">
+        <nav class="navbar navbar-light bg-light"></nav>
+        <h2>Liste des produits</h2>
+<!-- <table>
+            <tr>
+                <th>ID</th>
+                <th>DESIGNATION</th>
+                <th>DESCRIPTIF</th>
+                <th>PRIX UHT</th>
+                <th>REF INTERNE</th>
+            </tr>boucles angular
+            <tr *ngFor="let p of produits ">
+                <td>{{p.idProduit}}</td>
+                <td>{{ p.designationProduit}} </td>
+                <td>{{ p.descriptifProduit}}</td>
+                <td>{{p.prixVenteUProduit }}</td>
+                <td>{{p.refInterneProduit }}</td>
+            </tr>
+        </table>  -->
+
+<h1>card</h1>
+<div class="row"  >
+ <div *ngFor="let p of produits " class="card mx-2" style="width: 18rem;" >
+    
+    <div class="card-body  ">
+      <h5 class="card-title">{{ p.designationProduit}}</h5>
+      <p class="card-text">{{ p.descriptifProduit}}</p>
+      <p class="card-text"> ref : {{p.refInterneProduit }}</p>
+      <p> Prix : {{p.prixVenteUProduit }}</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+</div>
+    </div>
+</div>
