@@ -1,0 +1,36 @@
+<!-- <a routerLink="/addProduit"  class="wawes-effect wawes-black btn right orange" >Ajouter </a> -->
+
+<h2 style="text-align: center; margin-bottom: 50px;">Liste des  Medias</h2>
+
+<h2> <a routerLink="/addMedias"><img src="../../../../../assets/img/icones/ajouter.png" valt= "" width="2%">ajout medias</a></h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th style="width: 10px;" scope="col">ID</th>
+      <th style="width: 10px;" scope="col">TITRE</th>
+      <th style="width: 10px;" scope="col">SOUS TITRE</th>
+      <th style="width: 10px;" scope="col">DESCRIPTION</th>
+      <th style="width: 10px;"  scope="col">CATEGORIE</th>
+      <th style="width: 10px;" scope="col">DUREE</th>
+      <th style="width: 10px;" scope="col">STYLE</th>
+      <th style="width: 10px;" scope="col">FORMAT</th>
+      <th style="width: 10px;" scope="col">MODIFIER</th>
+      <th style="width: 10px;" scope="col">SUPPRIMER</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr  *ngFor="let m of medias ">
+      <th scope="row">{{m.idMedia}}</th>
+      <td> <strong>{{m.titreMedia|uppercase}}</strong> </td>
+      <td> {{m.sousTitreMedia}}</td>
+      <td> {{m.descriptionMedia}}</td>
+      <td> {{m.categorieVideos}}</td>
+      <td> {{m.dureeVideos}}</td>
+      <td> {{m.styleVideos}}</td>
+      <td> {{m.formatVideo}}</td>
+      <td> <a routerLink=" /edit/{{ m.idMedia }}"> <img src="../../../../../assets/img/icones/draw.png"  alt="" width="30%"></a></td>
+      <td ><a routerLink="/media/{{ m.idMedia }}"> <img src="../../../../../assets/img/icones/minus.png" alt="" width="30%"></a></td>
+    </tr>
+  </tbody>
+</table>

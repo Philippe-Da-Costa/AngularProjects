@@ -1,0 +1,19 @@
+table{
+  border: solid 3px #a6b5fc;
+  margin: auto;
+  margin-bottom: 25px;
+  width: 210vh;
+}
+td{width: 70vh;}
+
+
+.idTable{width:1000px;}
+.titre{width: 300px;}
+.sousTitre{width: 300px;}
+.desc{width: 300px;}
+.cat{width: 300px;}
+.duree{width: 300px;}
+.style{width: 300px;}
+.format{width: 300px;}
+.modifie{width: 300px;}
+.supp{width: 300px;}

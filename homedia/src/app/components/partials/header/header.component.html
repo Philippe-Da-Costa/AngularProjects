@@ -1,0 +1,72 @@
+<div class="row header"><!-- Begin Header -->
+
+
+<div class="col-3">
+   <!-- Logo================================================== -->
+       <div class="span5 logo">
+         <a href="#"><img src="../assets/img/logos/logoFine.png" alt="logo du site" width="45%" /></a>
+       </div>
+</div>
+<div class="col-9">
+
+  <!-- Main Navigation
+    ================================================== -->
+    <!-- <h2> <a routerLink="/produit" style="color: red;margin-left: auto;margin-right: auto;">Produit</a> </h2> -->
+    <div class="span7 navigation">
+      <div class="navbar hidden-phone ">
+      <ul class="nav">
+          <li><a href="/#">Home</a></li>
+          <li><a routerLink="/medias" >Medias</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              VIDEO
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" routerLink="/acteur" >Acteur</a></li>
+              <li><a class="dropdown-item" routerLink="/add-acteur" >Ajout d acteur</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             ADMIN
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" routerLink="/list-acteur" >Acteur</a></li>
+              <li><a class="dropdown-item" routerLink="/add-acteur" >Ajout d acteur</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+
+
+          <li><a href="index.html">JEUX VIDEOS</a></li>
+          <li><a href="page-contact.html">A PROPOS</a></li>
+          <li><a href="page-contact.html">CONNECTION</a></li>
+          <li class="connect"><a href="index.html">SE CONNECTER</a></li>
+      </ul>
+  </div>
+
+  <!-- Mobile Nav
+      ================================================== -->
+      <form action="#" id="mobile-nav" class="visible-phone">
+          <div class="mobile-nav-select">
+          <select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
+              <option value="">Navigate...</option>
+              <option value="/medias">MEDIAS</option>
+              <option value="gallery-4col.html">LIVRES</option>
+              <option value="features.html">VIDEOS</option>
+              <option value="features.html">JEUX VIDEOS</option>
+              <option value="page-contact.html">APROPOS</option>
+              <option value="page-contact.html">CONTACT</option>
+              <option value="page-contact.html">CONNEXION</option>
+          </select>
+          </div>
+          </form>
+
+
+  </div><!-- End Header -->
+</div>
+</div>
+

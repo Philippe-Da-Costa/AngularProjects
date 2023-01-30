@@ -1,0 +1,38 @@
+
+
+<form   [formGroup]="form" (ngSubmit)="create()">
+
+  <div class="row">
+    <div class="col-6">
+      <div class="mb-3">
+        <label for="nom" class="form-label">Nom</label>
+        <input type="text" class="form-control" id="nom" formControlName="nomActeur">
+      </div>
+
+      <div class="mb-3">
+        <label for="prenom" class="form-label">Prenom</label>
+        <input type="prenom" class="form-control" id="prenom" formControlName="prenomActeur">
+      </div>
+
+      <div class="mb-3">
+        <label for="bio" class="form-label">Biographie</label>
+        <input type="bio" class="form-control" id="bio" formControlName="bioActeur">
+      </div>
+    </div>
+    <div class="col-6">
+
+      <div class="mb-3">
+        <label for="wiki" class="form-label">Wikipedia</label>
+        <input type="wiki" class="form-control" id="wiki" formControlName="wikiActeur">
+      </div>
+      <div class="mb-3">
+        <label for="illustration" class="form-label">Illustration</label>
+        <input type="illustration" class="form-control" id="illustration"formControlName="illustrationActeur">
+      </div>
+
+    </div>
+
+  </div>
+  <button type="submit" class="btn btn-success btn-block">Submit</button>
+</form>
+{{form.value|json}}

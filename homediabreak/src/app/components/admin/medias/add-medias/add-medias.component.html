@@ -1,0 +1,51 @@
+
+<form class="formAdd"  [formGroup]="form" (ngSubmit)="ajoutMedias()" method="post">
+
+  <div class="row">
+    <div class="col-6">
+      <div class="mb-3 ">
+        <label for="idMedia" class="form-label">id Medias</label>
+        <input id="idMedias" type="number" formControlName="idMedias"  data-lenght="10" class="form-control"   >
+      </div>
+      <div class="mb-3 ">
+        <label for="titreMedias" class="form-label">Titres</label>
+        <input id="titreMedias" type="text" formControlName="titreMedias"  data-lenght="10" class="form-control"   >
+      </div>
+      <div class="mb-3 ">
+        <label for="sousTitreMedias" class="form-label">Sous Titres</label>
+        <input id="sousTitreMedias" type="text" formControlName="sousTitreMedias"  data-lenght="10" class="form-control"   >
+      </div>
+      <div class="mb-3 ">
+        <label for="descriptionMedias" class="form-label">Description</label>
+        <input id="descriptionMedias" type="text" formControlName="descriptionMedias"  data-lenght="10" class="form-control"   >
+      </div>
+      <div class="mb-3 ">
+        <label for="illustrationMedias" class="form-label">Illustration</label>
+        <input id="illustrationMedias" type="text" formControlName="illustrationMedias"  data-lenght="10" class="form-control"   >
+      </div>
+
+    </div>
+    <div class="col-6 ">
+      <div class="mb-3 ">
+      <label for="dureeVideos" class="form-label">Durée de la  video</label>
+      <input id="dureeVideos" type="number" formControlName="dureeVideos"  data-lenght="10" class="form-control"   >
+    </div>
+      <div class="mb-3 ">
+      <label for="categorieVideos" class="form-label">Catégorie de la  video</label>
+      <input id="categorieVideos" type="text" formControlName="categorieVideos"  data-lenght="10" class="form-control"   >
+    </div>
+      <div class="mb-3 ">
+      <label for="styleVideos" class="form-label">Style de la video</label>
+      <input id="styleVideos" type="text" formControlName="styleVideos"  data-lenght="10" class="form-control"   >
+    </div>
+      <div class="mb-3 ">
+      <label for="formatVideos" class="form-label">Format de la video</label>
+      <input id="formatVideos" type="text" formControlName="formatVideos"  data-lenght="10" class="form-control"   >
+    </div>
+
+    </div>
+  </div>
+
+<button type="submit" class="btn btn-success btn-block">Creer medias</button>
+</form>
+{{form.value|json}}

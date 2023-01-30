@@ -1,0 +1,29 @@
+
+<a routerLink="/addProduit"  class="wawes-effect wawes-black btn right orange" >Ajouter </a>
+<h2>Liste des  produits</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th style="width: 50px;"  scope="col">ID</th>
+      <th style="width: 200px;" scope="col">DESIGNATION</th>
+      <th style="width: 200px;" scope="col">DESCRIPTIF</th>
+      <th style="width: 100px;" scope="col">PRIX</th>
+      <th style="width: 100px;" scope="col">REF</th>
+      <th style="width: 100px;" scope="col">Modifier</th>
+      <th style="width: 100px;" scope="col">Supp</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr  *ngFor="let p of produits ">
+      <th scope="row">{{p.idProduit}}</th>
+      <td>{{ p.designationProduit|uppercase}}</td>
+      <td>{{ p.descriptifProduit}}</td>
+      <td>{{p.prixVenteUProduit|currency:"EUR"}}</td>
+      <td>{{p.refInterneProduit}}</td>
+      <td><a routerLink="/edit/{{ p.idProduit }}">    <img src="../../../assets/icones/draw.png"  alt=""  width="40%"></a></td>
+      <td><a routerLink="/produit/{{ p.idProduit }}"> <img src="../../../assets/icones/minus.png" alt=""  width="40%"></a></td>
+    </tr>
+  </tbody>
+</table>

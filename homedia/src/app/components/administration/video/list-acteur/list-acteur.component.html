@@ -1,0 +1,35 @@
+
+<div class="container">
+  <div class="a">
+
+    <a routerLink="/add-acteur" ><img src="../../../../assets/img/icones/ajouter.png"  alt="" > Acteur</a>
+  </div>
+  <table class="table">
+
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Nom Acteur</th>
+        <th scope="col">Prenom</th>
+        <th scope="col">Bio</th>
+        <th scope="col">Illustration</th>
+        <th scope="col">wiki</th>
+        <th scope="col">Modifier</th>
+        <th scope="col">Supprimer</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let a of acteurs" >
+        <th scope="row">{{a.idActeur}}</th>
+        <td>{{a.nomActeur|uppercase}}</td>
+        <td>{{a.prenomActeur}}</td>
+        <td>{{a.bioActeur}}</td>
+        <td>{{a.illustrationActeur}}</td>
+        <td>{{a.wikiActeur}}</td>
+        <td class="iconeTd"><img src="../../../../../assets/img/icones/draw.png " width="50%" alt="" ></td>
+        <td class="iconeTd"><a routerLink="/acteur/{{a.idActeur}}" ><img src="../../../../../assets/img/icones/minus.png" width="40%" alt="" ></a></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>

@@ -1,38 +1,23 @@
 
-
 <div class="container">
-    <div class="container">
-        <nav class="navbar navbar-light bg-light"></nav>
-        <h2>Liste des produits</h2>
-<!-- <table>
-            <tr>
-                <th>ID</th>
-                <th>DESIGNATION</th>
-                <th>DESCRIPTIF</th>
-                <th>PRIX UHT</th>
-                <th>REF INTERNE</th>
-            </tr>boucles angular
-            <tr *ngFor="let p of produits ">
-                <td>{{p.idProduit}}</td>
-                <td>{{ p.designationProduit}} </td>
-                <td>{{ p.descriptifProduit}}</td>
-                <td>{{p.prixVenteUProduit }}</td>
-                <td>{{p.refInterneProduit }}</td>
-            </tr>
-        </table>  -->
+  <div class="container">
+      <app-add-produit></app-add-produit>
 
-<h1>card</h1>
-<div class="row"  >
- <div *ngFor="let p of produits " class="card mx-2" style="width: 18rem;" >
-    
+        <h2>Liste des produits</h2>
+        <app-edit-produit></app-edit-produit>
+         <app-listproduit></app-listproduit>
+<!-- <div class="row"  >
+ <div *ngFor="let p of produits " class="card mx-2 my-2" style="width: 18rem;" >
+  <img src="http://localhost:8086/{{p.illustration}}" class="card-img-top" alt="...">
     <div class="card-body  ">
-      <h5 class="card-title">{{ p.designationProduit}}</h5>
+      <h5 class="card-title">{{ p.designationProduit|uppercase}}</h5>
       <p class="card-text">{{ p.descriptifProduit}}</p>
       <p class="card-text"> ref : {{p.refInterneProduit }}</p>
-      <p> Prix : {{p.prixVenteUProduit }}</p>
+      <p> Prix : {{p.prixVenteUProduit|currency :"EUR"}}</p>
       <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
   </div>
-</div>
+</div> -->
     </div>
 </div>
+

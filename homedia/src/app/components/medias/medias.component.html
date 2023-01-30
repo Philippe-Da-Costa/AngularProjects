@@ -1,29 +1,18 @@
 
-
-
-<h2>Liste des Medias</h2>
-
-<table >
-    <tr>
-        <th>IDMEDIAS</th>
-        <th>TITRE</th>
-        <th>SOUS-TITRE</th>
-        <th>DESCRIPTION</th>
-        <th>DUREE</th>
-        <th>CATEGORIE</th>
-        <th>STYLE</th>
-        <th>REALISATEUR</th>
-        <th>FORMAT-VIDEO</th>
-    </tr>
-    <tr *ngFor="let m of medias">
-        <td>id :{{m.idMedia}}</td>
-        <td>{{m.titreMedia}}</td>
-        <td>{{m.sousTitreMedia}}</td>
-        <td>{{m.descriptionMedia}}</td>
-        <td>{{m.dureeVideos}}</td>
-        <td>{{m.categorieVideos}}</td>
-        <td>{{m.styleVideos}}</td>
-        <td>{{m.realisateurVideo}}</td>
-        <td>{{m.formatVideo}}</td>
-</tr>
-</table>
+<h2 style="text-align: center;">Liste des Medias</h2>
+<div class="container">
+<div class="row">
+      <div *ngFor="let m of medias"  class="card mx-2 my-2" style="width: 18rem;">
+      <img src="http://localhost:8085/{{m.illustrationMedia}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{m.titreMedia|uppercase}}</h5>
+        <p class="card-text">{{m.sousTitreMedia}}</p>
+        <p class="card-text">{{m.descriptionMedia}}</p>
+        <p class="card-text">{{m.categorieVideos}}</p>
+        <p class="card-text">{{m.dureeVideos}}</p>
+        <p class="card-text">{{m.styleVideos}}</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+   </div>
+</div>

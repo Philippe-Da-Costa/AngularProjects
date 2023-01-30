@@ -1,0 +1,30 @@
+<div class="row">
+
+  <form class="col s12 " [formGroup]="editForm" (ngSubmit)="update()">
+    <div class="row">
+
+      <div class="input input-field col s16 ">
+        <label for="idProduit">idProduit</label><br>
+        <input type="text" id="idproduit formControlName data-length='10"><br>
+
+        <label for="refInterneProduit">REFERENCE INTERNE PRODUIT</label> <br>
+      <input id="refInterneProduit" type="text" formControlName="refInterneProduit" data-lenght="10"> <br>
+
+      <label for="designationProduit">DESIGNATION PRODUIT</label> <br>
+      <input id="designationProduit" type="text" formControlName="designationProduit" data-lenght="10"> <br>
+
+      <label for="descriptifProduit">DESCRIPTIF PRODUIT</label> <br>
+      <input id="descriptifProduit" type="text" formControlName="descriptifProduit" data-lenght="10"> <br>
+
+      <label for="prixVenteUProduit">PRIX VENTE PRODUIT</label> <br>
+      <input id="prixVenteUProduit" type="text" formControlName="prixVenteUProduit" data-lenght="10"> <br>
+
+      <label for="illustration">ILLUSTRATION</label> <br>
+      <input id="illustration" type="text" formControlName="illustration" data-lenght="10"> <br>
+</div>
+</div>
+    <button  type="submit" [disabled]="!editForm.valid" >Mode HIFI</button>
+    
+  </form>
+
+</div>

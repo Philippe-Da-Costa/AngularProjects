@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div *ngFor="let a of acteurs" class="card cardstyle" style="width: 18rem;">
+      <img src="{{a.illustrationActeur}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{a.prenomActeur}} {{a.nomActeur|uppercase}} </h5>
+        <p class="card-text">{{a.bioActeur}} </p>
+        <p class="card-text">{{a.wikiActeur}} </p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+</div>

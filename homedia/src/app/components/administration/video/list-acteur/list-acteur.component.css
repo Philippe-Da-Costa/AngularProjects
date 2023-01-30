@@ -1,0 +1,30 @@
+/* .a{
+  width: 4%;margin: auto;
+  margin-bottom: 20px;
+} */
+.iconeTd{
+ width:5% ;
+ text-align: center;
+}
+
+
+table
+{width: 80%;
+border: 2px solid blue;
+border-radius: 50px;
+background-color: azure;
+margin: auto;
+margin-bottom: 30px;
+
+}
+th,td{
+  text-align: center;
+  /* border: 2px solid blue ; */
+}
+.a{
+  width: 4%;margin: auto;
+  margin-bottom: 20px;
+
+
+}
+
